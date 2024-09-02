@@ -39,27 +39,38 @@ GET /api/Protected: An example of a protected endpoint that requires authenticat
 # Testing
 You can test the API using tools like Postman or cURL. Make sure to include the Bearer token in the Authorization header for protected endpoints.
 
-** Example Requests
+** Example Requests______________
 * Register a New User
 POST /api/Account/registerCustomer
 Content-Type: application/json
 
 {
+
   "firstName": "John",
+  
   "lastName": "Doe",
+  
   "email": "john.doe@example.com",
+  
   "password": "yourpassword",
+  
   "isActive": true
+  
 }
+
 * Login
 
 POST /api/Account/login
 Content-Type: application/json
 
 {
+
   "email": "john.doe@example.com",
+  
   "password": "yourpassword"
+  
 }
+
 * Access Protected Endpoint
 
 GET /api/Protected
